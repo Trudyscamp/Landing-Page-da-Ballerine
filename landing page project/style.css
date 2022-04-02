@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap'); /* importa as fontes do google Fonts para o documento*/
+
+*{ /*Essa tag reiniciará todo o css original da página, removendo a borda, padding, setando o "box-sizing" para border-box e removendo as decorações de texto.*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{ /*Conteúdo da página*/
+   font-size: 100%; 
+   background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); /*O "background" muda a cor de fundo, e o "linear-gradient" faz o degradê de cores.*/
+}
+.cabecalho{
+    display: flex; /*Avisa ao CSS que ele irá usar Flex Box*/
+  flex-direction: row;  /*O "Flex-direction: row" irá fazer com que os itens sejam alinhados em uma mesma linha da esquerda para a direita*/
+  align-items: center; /*O "Align-direction" alinhará o item ao centro da imagem*/
+  justify-content: space-around; /*Ajustará os itens para que fiquem separados em espaços mas não nas pontas.*/
+  padding: 24px; /*Ajusta o conteúdo para que abra um espaço em relação à borda.*/
+  
+}
+.cabecalho-imagem{
+    height: 72px; /*Ajusta a altura e largura maxima da imagem.*/
+}
+.cabecalho-menu{
+   display:flex; /*Avisa ao CSS que será utilizado a flexbox.*/
+   gap: 32px; /*Cria um pequeno espaçamento entre os itens.*/
+}
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;  /*Define o tipo de fonte*/
+    color:#FFF2E7; /*Cor da fonte*/
+    font-weight: 400;/*peso(espessura) da fonte*/
+    font-size: 18px; /*Tamanho da fonte em pixels*/
+}
+.conteudo{
+  border-top: 0.4px solid #FFF2E7; /*Cria a linha horizontal que separa o cabeçalho do conteúdo*/ 
+  margin-bottom: 48PX; /*acrescenta uma margem de espaço acima entre a linha separatória e o conteúdo.*/
+}
+.conteudo-principal{
+    display: flex; /*Avisa ao CSS que usará a flex Box*/
+    flex-direction: row; /* Define o tipo de organização da Flex Box em Linha única.*/
+    align-items: center; /*Alinha os itens ao centro da imagem.*/
+    justify-content: space-around; /*Ajustará os itens para que fiquem separados em espaços mas não nas pontas.*/
+}
+.conteudo-principal-escrito{
+    display:flex;
+    flex-direction: column; /*Define o tipo de organização da Flex Box em Coluna*/
+    gap: 32px; /*Define um espaçamento entre os itens*/
+}
+.conteudo-principal-escrito-titulo{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2E7; 
+}
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ecd6c4; 
+}
+.conteudo-principal-escrito-botao{
+    background-color: #ecd6c4; /*Define a cor de fundo do botão.*/
+    width: 180px; /*Largura do Botão*/
+    height: 60px; /*Altura do Botão*/
+    border: none; /*Remove a borda padrão do botão.*/
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25); /*Cria uma sombra suave por trás do botão*/
+    border-radius: 20px; /*Arredonda os cantos para que o botão não fique quadrado*/
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color:#2F2325 ;
+}
+.conteudo-principal-escrito-botao:hover{ /*Função que faz com que quando passe o mouse ocorra uma mudança de cor.*/
+    background-color: rgba(236, 214, 196, 0.53);
+}
+.conteudo-principal-imagem{
+   height: 430px; 
+}
+
+.conteudo-secundario{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid #FFF2E7; 
+    padding-top: 48px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2EF;
+    margin-bottom: 16px;
+}
+.conteudo-secundario-paragrafo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ecd6c4;  
+}
+.rodape{
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+
+}
+.rodape-imagem{
+    height: 48px;
+    display: block;
+    margin: 0 auto; /*Uma forma diferente de alinhar um item, onde a altura da margin é zerada e o proprio css tentará calcular a largura para que o item fique ao centro.*/
+}
